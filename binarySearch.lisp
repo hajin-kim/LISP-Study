@@ -1,7 +1,6 @@
 (load "mergeSort.lisp")
 
 (defun binary (listvar item left)
-	"Documentation for binary."
 	(cond
 		((null listvar) nil)
 		((= (car listvar) item) left)
@@ -13,7 +12,11 @@
 
 
 (defun binarySearch (listvar item)
-	"Documentation for binarySearch."
+	"
+	do binary search and get index of the item  
+	listvar: the list to search  
+	item: the element to find  
+	"
 	(binary (mergeSort listvar) item 0))
 
 

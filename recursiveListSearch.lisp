@@ -1,5 +1,9 @@
 (defun recursiveListSearch (listvar target)
-"Documentation for recursiveListSearch."
+	"
+	recursively search the target element from the given (nested) list and return if exists  
+	listvar: list to search  
+	target: target element  
+	"
 	(cond
 		((null listvar) nil)
 		((listp (car listvar))

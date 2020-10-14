@@ -1,6 +1,6 @@
-(load "factorial.lisp")
+(load "factorialNum.lisp")
 
-(load "reverse.lisp")
+(load "reverseList.lisp")
 
 (load "listSearch.lisp")
 (load "recursiveListSearch")
@@ -10,9 +10,9 @@
 (load "binarySearch.lisp")
 
 
-(print (myFactorial 7))
+(print (factorialNum 7))
 
-(print (myReverse '(a b c)))
+(print (reverseList '(a b c)))
 
 (print (listSearch '(a b c e g) 'b))
 (print (recursiveListSearch '(a b c e g) 'b))

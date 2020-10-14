@@ -1,5 +1,4 @@
 (defun mergeList (leftlist rightlist)
-	"Documentation for mergeList."
 	(cond
 		((null leftlist) rightlist)
 		((null rightlist) leftlist)
@@ -8,26 +7,26 @@
 
 
 (defun leftHalf (listvar n)
-	"Documentation for leftHalf."
 	(if (<= n 0)
 		nil
 		(cons (car listvar) (leftHalf (cdr listvar) (- n 1)))))
 		
 
 (defun rightHalf (listvar n)
-	"Documentation for leftHalf."
 	(if (<= n 0)
 		listvar
 		(rightHalf (cdr listvar) (- n 1))))
 		
 
 (defun halfLength (listvar)
-	"Documentation for leftHalfLength."
 	(ash (length listvar) -1))
 
 
 (defun mergeSort (listvar)
-	"Documentation for mergeSort."
+	"
+	do merge sort within O(nlogn) time  
+	listvar: list to sort  
+	"
 	(if (<= (length listvar) 1)
 		listvar
 		(mergeList
