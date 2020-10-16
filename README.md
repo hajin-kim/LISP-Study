@@ -31,14 +31,14 @@ do merge sort within O(nlogn) time
 listvar: the list to sort  
 
 ### [sortedItem.lisp](./sortedItem.lisp)
-*dependent to mergeSort.lisp*  
+*dependent on mergeSort.lisp*  
 `sortedItem (listvar n)`  
 get n-th element of the sorted form of the listvar  
 listvar: the list to find  
 n: the index of the element, from 0 to (SIZE - 1)  
 
 ### [binarySearch.lisp](./binarySearch.lisp)
-*dependent to mergeSort.lisp*  
+*dependent on mergeSort.lisp*  
 `binarySearch (listvar item)`  
 do binary search and get index of the item  
 listvar: the list to search  
